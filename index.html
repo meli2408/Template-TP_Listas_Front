@@ -7,8 +7,29 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <header>
-      <!-- Para filtros y navegacion -->
+    <header id="loedarriba">
+      <input type="serach" id="buscador">
+
+      <select id="filtroCategoria">
+        <option value="">Todas las categorías</option>
+        <option value="Parrilla">Parrilla</option>
+        <option value="Horno">Horno</option>
+        <option value="Guiso">Guiso</option>
+        <option value="Frito">Frito</option>
+      </select>
+
+      <select id="filtroProvincia">
+        <option value="">Todas las provincias</option>
+        <option value="Buenos Aires">Buenos Aires</option>
+        <option value="Córdoba">Córdoba</option>
+        <option value="Entre Ríos">Entre Ríos</option>
+        <option value="Jujuy">Jujuy</option>
+        <option value="Salta">Salta</option>
+        <option value="Santa Fe">Santa Fe</option>
+        <option value="Tucumán">Tucumán</option>
+        <option value="Patagonia">Patagonia</option>
+      </select>
+
     </header>
 
     <main class="comida-container" id="comidaContainer">
@@ -16,7 +37,21 @@
     </main>     
 
     <section class="addFood">
-      <!-- Para el form para agregar comida -->
+     <form id="formulario"> 
+      <label for="nombre">Nombre de la Comida:</label>
+      <input type="text" id="nombre" required>
+
+      <label for="categoria">Categoria de la Comida:</label>
+      <input type="text" id="categoria" required>
+
+      <label for="provincia">Proiviincia de la Comida:</label>
+      <input type="text" id="provincia"  required>
+
+      <label for="ingredientes">Ingredientes de la Comida:</label>
+      <input type="text" id="ingredientes" required>
+      
+      <button type="submit" id="boton">Agregar</button>
+     </form>
     </section>
 
     <script type="module" src="./main.js"></script>
