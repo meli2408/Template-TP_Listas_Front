@@ -7,3 +7,107 @@
 .comida-container {
   /* Estilos para el contenedor de la lista */
 }
+
+body {
+  background-color: #ffe4ec;
+  color: #3b242d;
+  padding: 20px;
+}
+
+.loedarriba {
+  background-color: white;
+  border: 3px solid #ff9ebb;
+  border-radius: 30px;
+  padding: 15px;
+  margin: 0 auto 30px auto;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filtro, .buscador{
+  font-size: 16px;
+  color: #7a4a5c;
+  background-color: white;
+  border: 2px solid #ffd1e0;
+  border-radius: 20px;
+  padding: 6px 14px;
+}
+
+.comida-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+ 
+.tarjeta {
+  background-color: white;
+  border: 3px solid #ff9ebb;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.comida {
+  font-size: 24px;
+}
+ 
+.provincia {
+  color: #b58a9b;
+  margin: 5px 0 10px 0;
+}
+ 
+.tarjeta li {
+  display: inline-block;
+  background-color: #ffeef3;
+  border-radius: 15px;
+  padding: 3px 10px;
+  margin: 2px;
+  font-size: 14px;
+}
+
+.addFood {
+  background-color: white;
+  border: 3px solid #ff9ebb;
+  border-radius: 25px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 40px auto;
+}
+ 
+.addFood label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+ 
+.addFood input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ffd1e0;
+  border-radius: 15px;
+  padding: 8px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+ 
+.contenedor-ingredientes input {
+  margin-bottom: 8px;
+}
+ 
+.addFood button {
+  background-color: #ffe9a8;
+  color: #3b242d;
+  border: 2px solid #7a4a5c;
+  border-radius: 20px;
+  padding: 8px 20px;
+  margin-top: 6px;
+  font-family: 'Comic Neue', 'Comic Sans MS', cursive;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}

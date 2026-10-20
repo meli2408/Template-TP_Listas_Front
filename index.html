@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <header id="loedarriba">
-      <input type="serach" id="buscador">
+    <header id="loedarriba" class="loedarriba">
+      <input type="serach" id="buscador" class="buscador">
 
-      <select id="filtroCategoria">
+      <select id="filtroCategoria" class="filtro">
         <option value="">Todas las categorías</option>
         <option value="Parrilla">Parrilla</option>
         <option value="Horno">Horno</option>
@@ -18,7 +18,7 @@
         <option value="Frito">Frito</option>
       </select>
 
-      <select id="filtroProvincia">
+      <select id="filtroProvincia" class="filtro">
         <option value="">Todas las provincias</option>
         <option value="Buenos Aires">Buenos Aires</option>
         <option value="Córdoba">Córdoba</option>
@@ -44,13 +44,19 @@
       <label for="categoria">Categoria de la Comida:</label>
       <input type="text" id="categoria" required>
 
-      <label for="provincia">Proiviincia de la Comida:</label>
+      <label for="provincia">Proivincia de la Comida:</label>
       <input type="text" id="provincia"  required>
 
-      <label for="ingredientes">Ingredientes de la Comida:</label>
-      <input type="text" id="ingredientes" required>
-      
-      <button type="submit" id="boton">Agregar</button>
+      <label for="ingrediente">Ingrediente:</label>
+       <div class="contenedor-ingredientes"> 
+         <input type="text" id="ingrediente" class="ingredientes" placeholder="Ingredientes:" required>
+       </div> 
+       <div> 
+         <button type="button" id="agregarIngrediente">Agregar Ingrediente</button>
+       </div>
+       <div> 
+         <button type="submit" id="boton">Agregar</button>
+       </div>
      </form>
     </section>
 
